@@ -13,6 +13,7 @@ app.listen(app.get('port'), function() {
 })
 */
 var http = require('http');
+/*
 var body = [
       '<head><title>Node app by tenxcloud</title></head>',
       '<div style="14px Lucida Grande, Helvetica, Arial, sans-serif">',
@@ -24,10 +25,11 @@ var body = [
           '</div>',
       '</div>'
    ].join('');
-
+*/
+var version = 1.0;
 http.createServer(function (request, response) {
     response.writeHead(200, { 'Content-Length': body.length,'Content-Type': 'text/html' });
-    response.end(body);
-}).listen(5000)
+    response.end('hi,this is '+version);
+}).listen(80)
 
 console.log('Node app is running at localhost:' + 5000 + '/');

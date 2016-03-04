@@ -26,7 +26,7 @@ var body = [
       '</div>'
    ].join('');
 */
-var version = 1.0;
+var version = 1.1;
 http.createServer(function (request, response) {
     response.writeHead(200, { 'Content-Length': body.length,'Content-Type': 'text/html' });
     response.end('hi,this is '+version);

@@ -26,10 +26,10 @@ var body = [
       '</div>'
    ].join('');
 */
-var version = 1.3;
+var version = 1.4;
 http.createServer(function (request, response) {
     //response.writeHead(200, { 'Content-Length': body.length,'Content-Type': 'text/html' });
     response.end('hi,this is '+version);
-}).listen(80)
+}).listen(82)
 
 console.log('Node app is running at localhost:' + 80 + '/');

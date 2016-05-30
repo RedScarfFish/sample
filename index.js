@@ -32,4 +32,4 @@ http.createServer(function (request, response) {
     response.end('hi,this is '+version);
 }).listen(82)
 
-console.log('Node app is running at localhost:' + 80 + '/');
+console.log('Node app is running at localhost:' + 82 + '/');

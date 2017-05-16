@@ -70,8 +70,3 @@ function each(obj, fn){
     }
 }
 
-var teamList = baidu.template('teamList');
-function render(data){
-    $("container").innerHTML = teamList(data);
-}
-

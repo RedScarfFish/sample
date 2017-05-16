@@ -64,9 +64,4 @@ var action = {
 function $(id){
     return document.getElementById(id);
 }
-function each(obj, fn){
-    for (var i = 0; i < obj.length; i++) {
-        fn.call(obj[i], obj[i], i);
-    }
-}
 
